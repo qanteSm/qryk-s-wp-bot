@@ -12,7 +12,7 @@ It helps you save incoming messages on your WhatsApp!
 ## Gerekenler
 
 
-- [Node JS](hhttps://nodejs.org)
+- [Node JS](hhttps://nodejs.org/)
 - [FFmpeg](https://www.ffmpeg.org/)
 
 ## Yükleme 
