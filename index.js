@@ -132,12 +132,13 @@ client.on("message_create", async (message) => {
     const timestamp = new Date(message.timestamp * 1000);
     const formattedTimestamp = timestamp.toLocaleString();
     let newMessage;
+    console.log(message._data.notifyName);
     if (message.pollOptions){
       newMessage = {
         timestamp: message.timestamp + " (" + formattedTimestamp + ")",
         messageid: message.id.id,
         realaythor: message.author,
-        name: message.notifyName || "yokki",
+        name: message._data.notifyName || "yokki",
         author,
         body: message.body,
         secenekler: message.pollOptions,
@@ -147,7 +148,7 @@ client.on("message_create", async (message) => {
         timestamp: message.timestamp + " (" + formattedTimestamp + ")",
         messageid: message.id.id,
         realaythor: message.author,
-        name: message.notifyName || "yokki",
+        name: message._data.notifyName || "yokki",
         author,
         body: message.body,
       };
